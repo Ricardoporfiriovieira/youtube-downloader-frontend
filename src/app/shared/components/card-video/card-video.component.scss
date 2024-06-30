@@ -33,3 +33,7 @@ mat-card-title {
   flex-direction: column;
   justify-content: center;
 }
+
+.mat-mdc-card-content:last-child{
+  padding: 16px;
+}

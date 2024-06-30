@@ -24,6 +24,10 @@ export class HomeComponent {
   constructor(private youtubeService: YoutubeService) {  }
 
   onSubmit(query: string) {
+    if (!query){
+      this.youtubeData = '';
+      return;
+    }
     this.youtubeService.getYoutubeVideoInfo(query).subscribe((data) => {
       this.youtubeData = data;
     })
