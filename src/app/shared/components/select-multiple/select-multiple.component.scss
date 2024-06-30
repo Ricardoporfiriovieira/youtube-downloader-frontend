@@ -1,0 +1,19 @@
+::ng-deep .mat-pseudo-checkbox.mat-pseudo-checkbox-checked {
+  background-color: #BF0436 !important;
+}
+
+::ng-deep .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+  color: #BF0436 !important;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label, .mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label--float-above {
+  color: #BF0436 !important;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after {
+  border-bottom-color: #BF0436 !important;
+}
+
+::ng-deep .mat-mdc-form-field.mat-focused .mat-mdc-select-arrow {
+  color: #BF0436 !important;
+}

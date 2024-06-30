@@ -1,1 +1,5 @@
-<p>home works!</p>
+<main>
+    <h1>Youtube Downloader</h1>
+    <app-search-bar (submitSearch)="onSubmit($event)"></app-search-bar>
+    <app-card-video *ngIf="youtubeData" [youtubeData]="youtubeData" ></app-card-video>
+</main>

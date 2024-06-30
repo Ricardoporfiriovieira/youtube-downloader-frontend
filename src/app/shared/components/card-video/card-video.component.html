@@ -1,0 +1,19 @@
+<mat-card class="horizontal-card">
+  <mat-card-header>
+    <div class="image-container">
+      <img mat-card-md-image [src]="youtubeData.image" alt="Imagem do vídeo">
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-card-title>{{ youtubeData.title }}</mat-card-title>
+    <mat-card-actions>
+      <div class="action-container">
+        <app-select-multiple></app-select-multiple>
+        <button mat-raised-button extended>
+          <mat-icon>download</mat-icon>
+          Download
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card-content>
+</mat-card>

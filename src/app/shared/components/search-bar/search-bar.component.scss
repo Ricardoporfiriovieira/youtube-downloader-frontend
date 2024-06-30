@@ -1,0 +1,21 @@
+form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0px 10px;
+  border-radius: 16px;
+  border: 1px solid #D0D9F2;
+
+
+  input {
+    outline: none;
+    border: none;
+    background: inherit;
+    color: #1A1D26;
+    width: 400px;
+  }
+}
+
+input::placeholder {
+  color: #1A1D26;
+}

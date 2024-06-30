@@ -1,0 +1,16 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;;
+  // border-bottom: 1px #ADB8D9 solid;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Valores ajustados para a sombra */
+  position: relative;
+}
+
+.title {
+  color: #BF0436;
+}
+
+mat-icon {
+  transform: scale(1.5);
+}

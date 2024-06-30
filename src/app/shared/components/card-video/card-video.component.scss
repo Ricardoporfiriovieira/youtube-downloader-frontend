@@ -1,0 +1,35 @@
+.horizontal-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 450px;
+  margin: 20px;
+}
+
+.mat-mdc-card-header {
+  padding: 16px;
+}
+
+.image-container {
+  border-radius: 16px;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+mat-card-title {
+  text-align: center;
+}
+
+.mat-mdc-raised-button:not(:disabled){
+  background-color: #BF0436;
+}
+
+.action-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
