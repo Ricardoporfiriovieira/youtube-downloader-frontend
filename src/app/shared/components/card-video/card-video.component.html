@@ -8,8 +8,8 @@
     <mat-card-title>{{ youtubeData.title }}</mat-card-title>
     <mat-card-actions>
       <div class="action-container">
-        <app-select-multiple></app-select-multiple>
-        <button mat-raised-button extended>
+        <app-select-multiple #selectMultipleComponent></app-select-multiple>
+        <button mat-raised-button extended (click)="downloadVideo()">
           <mat-icon>download</mat-icon>
           Download
         </button>

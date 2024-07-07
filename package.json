@@ -6,7 +6,9 @@
     "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "docker-build": "docker build -t youtube-downloader-frontend .",
+    "docker-run": "docker run -p 4200:4200 youtube-downloader-frontend"
   },
   "private": true,
   "dependencies": {

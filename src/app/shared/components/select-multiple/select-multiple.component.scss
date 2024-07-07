@@ -1,6 +1,7 @@
-::ng-deep .mat-pseudo-checkbox.mat-pseudo-checkbox-checked {
-  background-color: #BF0436 !important;
-}
+// SQUARECHECKBOX COLOR
+// ::ng-deep .mat-pseudo-checkbox.mat-pseudo-checkbox-checked {
+//   background-color: #BF0436 !important;
+// }
 
 ::ng-deep .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
   color: #BF0436 !important;
@@ -15,5 +16,11 @@
 }
 
 ::ng-deep .mat-mdc-form-field.mat-focused .mat-mdc-select-arrow {
+  color: #BF0436 !important;
+}
+
+
+// CHECKED ICON SQUARE CHECKBOX
+::ng-deep .mat-pseudo-checkbox-minimal.mat-pseudo-checkbox-checked::after, .mat-pseudo-checkbox-minimal.mat-pseudo-checkbox-indeterminate::after {
   color: #BF0436 !important;
 }

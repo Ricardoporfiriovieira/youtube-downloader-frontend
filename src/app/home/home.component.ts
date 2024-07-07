@@ -4,6 +4,7 @@ import { CardVideoComponent } from '../shared/components/card-video/card-video.c
 import { YoutubeService } from '../service/youtube.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { SharedService } from '../service/shared.service';
 
 @Component({
   selector: 'app-home',
@@ -20,6 +21,7 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent {
 
   youtubeData: any;
+  sharedService: SharedService = new SharedService;
 
   constructor(private youtubeService: YoutubeService) {  }
 
@@ -29,6 +31,7 @@ export class HomeComponent {
       return;
     }
     this.youtubeService.getYoutubeVideoInfo(query).subscribe((data) => {
+      this.sharedService.setUrl(query);
       this.youtubeData = data;
     })
   }

@@ -1,8 +1,19 @@
-<mat-form-field>
+<!-- TODO: implement multiple options selec to download mp3 and mp4 at the same time -->
+
+<!-- <mat-form-field>
   <mat-label>Selecione o formato do download</mat-label>
   <mat-select [formControl]="options" multiple class="custom-select">
     @for (option of optionsList; track options) {
       <mat-option [value]="option">{{option}}</mat-option>
+    }
+  </mat-select>
+</mat-form-field> -->
+
+<mat-form-field>
+  <mat-label>formato do download</mat-label>
+  <mat-select [formControl]="optionsControl" name="food" (selectionChange)="sendData($event)">
+    @for (option of options; track option) {
+      <mat-option [value]="option.value">{{option.viewValue}}</mat-option>
     }
   </mat-select>
 </mat-form-field>
